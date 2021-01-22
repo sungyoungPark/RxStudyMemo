@@ -7,7 +7,9 @@
 
 import UIKit
 
-class MemoListViewController: UIViewController {
+class MemoListViewController: UIViewController, ViewModelBindableType {
+   
+    var viewModel: MemoListViewModel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,6 +18,10 @@ class MemoListViewController: UIViewController {
     }
     
 
+    func bindViewModel() {
+        <#code#>
+    }
+    
     /*
     // MARK: - Navigation
 
