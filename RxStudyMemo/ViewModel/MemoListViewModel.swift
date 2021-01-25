@@ -34,7 +34,7 @@ class MemoListViewModel : CommonViewModel{  //의존성을 주입하는 생성�
             return self.storage.createMemo(content: "")  //내용이 없는 메모를 생성
                 .flatMap { memo -> Observable<Void> in
                     let composeViewModel = MemoComposeViewModel(title: "새 메모", sceneCoordinator: self.sceneCoordinator, storage: self.storage, saveAction: self.performUpdate(memo: memo), cancelAction: self.performCancel(memo: memo))
-                    print("99")
+    
                     let composeScene = Scene.compose(composeViewModel)
                     return self.sceneCoordinator.transition(to: composeScene, using: .modal, animated: true).asObservable().map { _ in }
                 }
