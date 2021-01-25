@@ -106,13 +106,13 @@
                     </view>
                     <navigationItem key="navigationItem" title="새 메모" id="aD1-kP-jTz">
                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="pep-FF-R6e"/>
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="oYo-TZ-oiV"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="QNb-hQ-na6"/>
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
-                        <outlet property="cancelBTN" destination="pep-FF-R6e" id="awe-Ab-dgr"/>
-                        <outlet property="contentTextView" destination="hps-32-2Ky" id="3KX-Xv-HNs"/>
-                        <outlet property="saveBTN" destination="oYo-TZ-oiV" id="uQ5-T5-ATY"/>
+                        <outlet property="cancelBTN" destination="pep-FF-R6e" id="D3r-j0-PEg"/>
+                        <outlet property="contentTextView" destination="hps-32-2Ky" id="inB-7B-ryL"/>
+                        <outlet property="saveBTN" destination="QNb-hQ-na6" id="VQT-Hx-70c"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xaC-ew-AFL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -157,7 +157,7 @@
         <!--Navigation Controller-->
         <scene sceneID="Bc1-8f-gbe">
             <objects>
-                <navigationController storyboardIdentifier="ComposeNavi" automaticallyAdjustsScrollViewInsets="NO" id="RAl-f2-Ngw" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="ComposeNav" automaticallyAdjustsScrollViewInsets="NO" id="RAl-f2-Ngw" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="7ru-bS-Sja">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
