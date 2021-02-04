@@ -41,4 +41,17 @@ class MemoListViewModel : CommonViewModel{  //의존성을 주입하는 생성�
         }
     }
     
+    //속성 형태
+    lazy var detailAction : Action<Memo, Void> = {     //Action<입력형식, 출력 형식>
+        return Action { memo in
+            
+            let detailViewModel = MemoDetailViewModel(memo: memo, title: "메모 보기", sceneCoordinator: self.sceneCoordinator, storage: self.storage)
+            
+            let detailScene = Scene.detail(detailViewModel)
+            
+            return self.sceneCoordinator.transition(to: detailScene, using: .push, animated: true).asObservable().map { _ in }
+        }
+    }()
+    
+    
 }
