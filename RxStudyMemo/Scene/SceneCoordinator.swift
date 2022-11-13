@@ -45,7 +45,7 @@ class SceneCoordinator : SceneCoordinatorType{  //화면 전환을 담당
                 break
             }
             
-            nav.rx.willShow //delegate 메소드가 호출되는 시점마다 next 이벤트를 방출하는 컨트롤 이벤트이다.
+            nav.rx.willShow //네비게이션뷰에 delegate 메소드가 호출되는 시점마다 next 이벤트를 방출하는 컨트롤 이벤트이다.
                 .subscribe(onNext: { [unowned self] evt in
                     print(evt)
                     self.currentVC = evt.viewController.sceneViewController
